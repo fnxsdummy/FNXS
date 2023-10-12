@@ -20,8 +20,8 @@ button {
 
 .circle1,
 .circle2 {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 196, 196, 0.5)), to(rgba(196, 196, 196, 0.3)));
-  background: linear-gradient(to right bottom, rgba(196, 196, 196, 0.5), rgba(196, 196, 196, 0.3));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(106, 246, 235, 0.24)), to(rgba(106, 246, 235, 0.29)));
+  background: linear-gradient(to right bottom, rgba(106, 246, 235, 0.24), rgba(106, 246, 235, 0.29));
   height: 25rem;
   width: 25rem;
   border-radius: 50%;
@@ -85,8 +85,8 @@ button {
 
 .content {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left bottom, right top, from(#5b4463), to(#28223f));
-  background: linear-gradient(to right top, #5b4463, #28223f);
+  background: -webkit-gradient(linear, left bottom, right top, from(#bae0e8), to(#29d8ff));
+  background: linear-gradient(to right top, #bae0e8, #29d8ff);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,7 +146,7 @@ button {
   width: 17rem;
   height: 17rem;
   border-radius: 50%;
-  border: 2px #955776 solid;
+  border: 2px #ff5757 solid;
   margin: 1.5rem 0 1rem 0;
   padding: 0.8rem;
   -o-object-fit: cover;
@@ -228,6 +228,61 @@ button {
   margin-right: 2.2rem;
 }
 
+.content .glass main .gaming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .glass main .gaming a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
+  background-color: #955776;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.content .glass main .gaming a img {
+  width: 2.8rem;
+  margin-right: 0.8rem;
+}
+
+.content .glass main .gaming a:hover {
+  background-color: #75445d;
+}
+
+.content .glass main .gaming #linkedin {
+  margin-right: 2.2rem;
+}
+
 .content .glass footer {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
@@ -246,7 +301,7 @@ button {
 }
 
 .content .glass footer h5 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.4rem;
