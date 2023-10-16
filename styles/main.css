@@ -84,7 +84,8 @@ button {
 }
 
 .content {
-  min-height: 100vh;
+  min-height: 120vh;
+  min-width: 50vh;
   background: -webkit-gradient(linear, left bottom, right top, from(#bae0e8), to(#29d8ff));
   background: linear-gradient(to right top, #bae0e8, #29d8ff);
   display: -webkit-box;
