@@ -1,5 +1,6 @@
-:root {
-  font-size: 62.5%;
+
+  :root {
+  font-size: 45.5%;
 }
 
 * {
@@ -10,6 +11,7 @@
 }
 
 body {
+  width:100vw;
   -webkit-font-smoothing: antialiased;
   font-family: "Poppins", sans-serif;
 }
@@ -18,74 +20,11 @@ button {
   cursor: pointer;
 }
 
-.circle1,
-.circle2 {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(106, 246, 235, 0.24)), to(rgba(106, 246, 235, 0.29)));
-  background: linear-gradient(to right bottom, rgba(106, 246, 235, 0.24), rgba(106, 246, 235, 0.29));
-  height: 25rem;
-  width: 25rem;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 2;
-}
 
-.circle1 {
-  bottom: 3%;
-  right: 26%;
-}
-
-.circle2 {
-  top: 3%;
-  left: 22%;
-}
-
-@media (max-width: 1024px) {
-  .circle1 {
-    bottom: 3%;
-    right: 15%;
-  }
-  .circle2 {
-    top: 3%;
-    left: 15%;
-  }
-}
-
-@media (max-width: 900px) {
-  .circle1 {
-    bottom: 3%;
-    right: 10%;
-  }
-  .circle2 {
-    top: 3%;
-    left: 10%;
-  }
-}
-
-@media (max-width: 750px) {
-  .circle1 {
-    bottom: 3%;
-    right: 5%;
-  }
-  .circle2 {
-    top: 3%;
-    left: 5%;
-  }
-}
-
-@media (max-width: 600px) {
-  .circle1 {
-    bottom: 3%;
-    right: -5%;
-  }
-  .circle2 {
-    top: 3%;
-    left: -5%;
-  }
-}
 
 .content {
-  min-height: 120vh;
-  min-width: 60vh;
+  min-height: 100vh;
+  min-width: 50vh;
   background: -webkit-gradient(linear, left bottom, right top, from(#bae0e8), to(#29d8ff));
   background: linear-gradient(to right top, #bae0e8, #29d8ff);
   display: -webkit-box;
@@ -104,8 +43,8 @@ button {
 }
 
 .content .glass {
-  min-height: 55rem;
-  width: 37rem;
+  min-height: 70vh;
+  width: 80vw;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(30, 30, 57, 0.5)), to(rgba(30, 30, 57, 0.3)));
   background: linear-gradient(to right bottom, rgba(30, 30, 57, 0.5), rgba(30, 30, 57, 0.3));
   border-radius: 2rem;
@@ -146,8 +85,8 @@ button {
           flex-direction: column;
   width: 17rem;
   height: 17rem;
-  border-radius: 50%;
-  border: 2px #ff5757 solid;
+  border-radius: 100%;
+  border: 2px plum solid;
   margin: 1.5rem 0 1rem 0;
   padding: 0.8rem;
   -o-object-fit: cover;
@@ -156,7 +95,7 @@ button {
 
 .content .glass header h1 {
   font-size: 3.2rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -207,9 +146,10 @@ button {
   color: #fff;
   background-color: #955776;
   text-decoration: none;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 0.8rem 1.2rem;
-  margin-bottom: 2rem;
+  margin: 2px;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 300;
   -webkit-transition: 0.2s;
@@ -221,8 +161,9 @@ button {
   margin-right: 0.8rem;
 }
 
-.content .glass main .socialmedia a:hover {
-  background-color: #75445d;
+.content .glass main .motion :hover {
+  background-color: #8F3E2DE8;
+  font-weight: bold;
 }
 
 .content .glass main .socialmedia #linkedin {
@@ -262,9 +203,10 @@ button {
   color: #fff;
   background-color: #955776;
   text-decoration: none;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 0.8rem 1.2rem;
-  margin-bottom: 2rem;
+  margin: 2px;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 300;
   -webkit-transition: 0.2s;
@@ -317,8 +259,9 @@ button {
   color: #fff;
   background-color: #955776;
   text-decoration: none;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 0.8rem 1.2rem;
+  margin: 2px;
   margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: 300;
@@ -377,4 +320,74 @@ button {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
+#avatarid:active {
+  border: 2px solid black;
+}
+#echo:active {
+  color: red;
+}
+section:active {
+  border: 1px outset black;
+  box-shadow: 2px 2px 5px black;
+}
+.content5 {
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 35px;
+  padding: 30px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.line {
+  display: block;
+}
+.line {
+  margin: 1px;
+}
+h1:hover{
+  color: black;
+  text-shadow: 0.8px 0.8px 1px deepskyblue;
+}
+
+@keyframes fenix {
+  0%{
+    color: indianred;
+  }
+  10%{
+    color: deeppink;
+  }
+  20%{
+    color: orange;
+    
+  }
+  30%{
+    color: yellow;
+  }
+  40%{
+    color: lightgreen;
+  }
+  50%{
+    color: darkgreen;
+  }
+  60%{
+    color: blue;
+    
+  }
+  70%{
+    color: darkviolet;
+  }
+  80%{
+    color: purple;
+  }
+  90%{
+    color: darkred;
+  }
+  100%{
+    color: red;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
