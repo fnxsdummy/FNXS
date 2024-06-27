@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>COLOR PICKER</title>
+  <style>
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .screen {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left bottom, ghostwhite, lightskyblue, ghostwhite);
+  }
+  #rgb-code {
+    font-family: monospace;
+    padding: 5px 5px;
+  }
+  .copy:active {
+    background-color: rgb(220, 247, 245);
+  }
+  .copy {
+    padding: 5px 20px;
+    background-color: white;
+    font-family: monospace;
+    border: 1px double black;
+    border-radius: 2px;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px 0px;
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: black;
+    color: white;
+    font-family: serif;
+    
+  }
+  .logo {
+    border: 0.1px solid white;
+    width: 30px;
+    height: 30px;
+    background: conic-gradient(red, green, blue, red);
+    border-radius: 50%;
+  }
+  .links {
+    color: white;
+    text-decoration: none;
+  }
+  .colorscreen {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 150px;
+    border: 1px solid black;
+    margin: 20px 20px;
+    border-radius: 5px;
+    color: white;
+    font-family: serif;
+    text-shadow: 0px 0px 20px black;
+    background-color: rgb(195, 66, 162);
+  }
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .c-name {
+    font-family: cursive;
+    padding: 5px 5px;
+  }
+    #green, #red, #blue {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: white;
+      border-radius: 5px;
+      height: 5px;
+      width: 60%;
+      margin-bottom: 20px;
+      border: 0.5px solid black;
+      
+    }
+    #icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    #red {
+      background: linear-gradient(to right, red 76%, white 0%);
+    }
+    #green {
+      background: linear-gradient(to right, green 25.8823529%, white 0%);
+    }
+    #blue {
+      background: linear-gradient(to right, blue 63.5294118%, white 0%);
+    }
+    #red::-webkit-slider-thumb{
+      -webkit-appearance: none;
+      appearance: none;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: red;
+    }
+    #green::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: green;
+    }
+    #blue::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: blue;
+    }
+    .add-name {
+      margin: 50px 0px;
+      font-family: cursive;
+      
+    }
+    .add-1 {
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <nav class="navbar">
+      <a href="https://fenixsdummy.com/" class="links">Personal Portfolio</a>
+      <span class="logo"><img src="icon.jpg" alt="icon.jpg" id="icon"></span>
+      <a onclick="aboutText()" class="links">About Color Picker</a>
+    </nav>
+    <div class="colorscreen" id="frontcolor">
+      rgb(195, 66, 162)
+    </div>
+    <div class="slider">
+      <p class="c-name" id="c-red">Red: 195</p>
+      <input type="range" id="red" min="0" max="255" value="195">
+    </div>
+    <div class="slider">
+      <p class="c-name" id="c-green">Green: 66</p>
+      <input type="range" id="green" min="0" max="255" value="66">
+    </div>
+    <div class="slider">
+      <p class="c-name" id="c-blue">Blue: 162</p>
+      <input type="range" id="blue" min="0" max="255" value="162">
+    </div>
+    
+    <div class="copied">
+      <p id="rgb-code">
+        Click here to copy!
+      </p>
+      <button class="copy" id="copyText">COPY</button>
+    </div>
+    <div class="add-name">
+      <p class="add-0">Designed by:</p>
+      <p class="add-1">Team FENIXS</p>
+    </div>
+  </div>
+  
+<script>
+  
+    var redValue = document.getElementById("red");
+    var greenValue = document.getElementById("green");
+    var blueValue = document.getElementById("blue");
+    var screen = document.getElementById("frontcolor");
+    var hex = document.getElementById("hex");
+    
+    
+    
+    redValue.oninput = function () {
+      var bgc = "rgb("+redValue.value+","+greenValue.value+","+blueValue.value+")";
+      screen.style.backgroundColor = bgc;
+      screen.innerHTML = bgc;
+      document.getElementById("c-red").innerHTML = "Red : "+redValue.value;
+      redValue.style.background = "linear-gradient(to right, red "+redValue.value/2.55+"%, white 0%)";
+    };
+    greenValue.oninput = function() {
+      var bgc = "rgb(" + redValue.value + "," + greenValue.value + "," + blueValue.value + ")";
+      screen.style.backgroundColor = bgc;
+    screen.innerHTML = bgc;
+    document.getElementById("c-green").innerHTML = "Green : "+greenValue.value;
+    greenValue.style.background = "linear-gradient(to right, green "+greenValue.value/2.55+"%, white 0%)";
+    };
+    blueValue.oninput = function() {
+      var bgc = "rgb(" + redValue.value + "," + greenValue.value + "," + blueValue.value + ")";
+      screen.style.backgroundColor = bgc;
+    screen.innerHTML = bgc;
+    document.getElementById("c-blue").innerHTML = "Blue : "+blueValue.value;
+    blueValue.style.background = "linear-gradient(to right, blue "+blueValue.value/2.55+"%, white 0%)";
+    };
+    
+    document.getElementById("copyText").addEventListener("click", ()=>{
+      var bgc = "rgb(" + redValue.value + "," + greenValue.value + "," + blueValue.value + ")";
+      navigator.clipboard.writeText(bgc);
+    });
+    function aboutText() {
+      var abt = document.getElementById("frontcolor");
+      abt.innerHTML = "Discover, select, and explore the perfect colors with our intuitive and precise color picker tool. Find your palette inspiration!";
+      abt.style.padding = "20px";
+      
+    };
+    
+</script>
+</body>
+</html>
