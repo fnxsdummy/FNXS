@@ -12,3 +12,7 @@ $(document).ready(function(){
     var qx = document.getElementById("scroll-about");
   qx.scrollIntoView();
   };
+function goHome() {
+    var gotop = document.getElementById("top-page");
+    gotop.scrollIntoView();
+}
