@@ -17,11 +17,11 @@ function goHome() {
     gotop.scrollIntoView();
 }
 function slayer() {
-    window.location = "https://www.instagram.com/fenixs_slayer?igsh=Z2EyZTh2ajk1cXJq";
+    window.location.href = "https://www.instagram.com/fenixs_slayer?igsh=Z2EyZTh2ajk1cXJq";
 };
 function alpha() {
-    window.location = "https://www.instagram.com/fenixs_alpha?igsh=OWJwczlkYXAxb3lh";
+    window.location.href = "https://www.instagram.com/fenixs_alpha?igsh=OWJwczlkYXAxb3lh";
 };
 function hunter() {
-    window.location = "https://www.instagram.com/_fenixs_hunter?igsh=NW9nZmdjdHZrY3dn";
+    window.location.href = "https://www.instagram.com/_fenixs_hunter?igsh=NW9nZmdjdHZrY3dn";
 };
