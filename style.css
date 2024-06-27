@@ -179,3 +179,16 @@ h6 {
 .aboutInfo {
   padding: 10px 15px;
 }
+#top {
+background-color: white;
+color: black;
+width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#top-sign {
+width: 20px;
+    height: 20px;
+}
