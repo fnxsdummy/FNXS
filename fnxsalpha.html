@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNXsALPHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+      * {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #c08aff, #56f5b8);
+    color: #333;
+    transition: background 0.5s;
+    scroll-behavior: smooth;
+}
+#mainName {
+  margin: 0px;
+  background: linear-gradient(to bottom, #B1AFFF, #BBE9FF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0px;
+  font-size: 40px;
+  margin-bottom: 70px;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  /* text-shadow: 0 0 1px cyan; */
+}
+/* #mainName:hover {
+  box-shadow: 0 0 80px dimgray;
+} */
+header {
+    background-color: #282c34;
+    color: #fff;
+    padding: 10px 0;
+    padding-top: 40px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section p {
+  font-family: serif;
+  word-spacing: 3px;
+  /* letter-spacing: 1px; */
+  line-height: 30px;
+}
+
+nav {
+  display: none;
+  transition: all 0.1s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 30px cyan;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 80px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+}
+
+section:hover {
+  
+}
+h3 {
+  font-family: serif;
+}
+
+.project {
+    display: inline-block;
+    /* margin: 20px auto; */
+    margin: 0.5rem 1rem;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* #project {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea {
+    width: 80%;
+    margin: 10px 0;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #282c34;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #ff6347;
+}
+
+footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .project {
+        width: 90%;
+        margin: 1rem auto;
+        
+    }
+    
+    /* section#project {
+      flex-direction: row;
+    } */
+
+    form label, form input, form textarea {
+        width: 90%;
+    }
+}
+
+
+/* Menu button css start----- */
+/* <reset-style> ============================ */
+.hamBurger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  margin: 10px 0px;
+}
+.hamBurger .hamSpan {
+  background-color: white;
+  height: 2px;
+  width: 20px;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+.hamBurger:active .hamSpan {
+  box-shadow: 0 0 30px cyan;
+  width: 11rem;
+}
+/* Menu button css ends----- */
+.sociel-box {
+  margin-top: 50px;
+}
+.sociel-box .sociel-icons {
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+}
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1 id="mainName">FNXsALPHA</h1>
+        <nav id="navBar_ID">
+            <ul>
+                <li><a href="#about" class="a_id">About</a></li>
+                <li><a href="#projects" class="a_id">Youtube</a></li>
+                <li><a href="#contact" class="a_id">Social</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hamBurger" id="s-icon">
+          <span class="hamSpan"></span>
+          <span class="hamSpan"></span>
+          <span class="hamSpan"></span>
+        </div>
+
+        
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Meet FÑXsALPHA, the PUBG ace with eagle eyes and quick reflexes. Dominating arenas, sharing pro tips, and streaming epic wins. Squad up, glory awaits!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Youtube</h2>
+        <div class="project" id="yt-1">
+            <img src="yt_2.jpg" alt="Video">
+            <h3>HACKER SPRAY</h3>
+            <p>1 subscribe for this crazy video.</p>
+        </div>
+        <div class="project" id="yt-2">
+            <img src="yt_1.jpg" alt="Video">
+            <h3>BGMI MONTAGE</h3>
+            <p>Fun time video</p>
+        </div>
+        <div class="project" id="yt-3">
+            <img src="yt_3.jpg" alt="Video">
+            <h3>CLOSE RANGE</h3>
+            <p>Close range fight clutches.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Reach Me</h2>
+        <!-- <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form> -->
+        <div class="sociel-box">
+          <img src="facebook.svg" alt="Facebook" class="sociel-icons" id="si-1">
+          <img src="insta.svg" alt="Instagram" class="sociel-icons" id="si-2">
+          <img src="what.svg" alt="Whatsapp" class="sociel-icons" id="si-3">
+          <img src="email.svg" alt="E-mail" class="sociel-icons" id="si-4">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Developed by FENIX</p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Message sent successfully!');
+        form.reset();
+    });
+});
+
+// document.getElementById("s-icon").addEventListener("click", function(){
+//   var navBar = document.getElementById("navBar_ID");
+  
+//   if(navBar.style.display = "none"){
+//     navBar.style.display = "block";
+//   }
+//   else {
+//     navBar.style.display = "none";
+//   }
+// });
+    var button = document.getElementById('s-icon');
+    var navBar = document.getElementById('navBar_ID');
+    var aa = document.getElementsByClassName('a_id');
+
+    button.addEventListener('click', function() {
+        if (navBar.style.display === "none" ) {
+            navBar.style.display = "block";
+        }
+        else {
+            navBar.style.display = "none";
+        }
+    });
+    
+    document.getElementById('yt-1').addEventListener('click', ()=>{
+      window.location.href = "https://youtu.be/zvZ4ScJqNgI?si=PGPBq3Pm_n4HYfRa";
+    });
+    document.getElementById('yt-2').addEventListener('click', ()=>{
+      window.location.href = "https://youtu.be/E1UAQ1VMwNc?si=I2ElWe8v29KDVsb5";
+    });
+document.getElementById('yt-3').addEventListener('click', ()=>{
+      window.location.href = "https://youtu.be/ltFTnU6mtxc?si=poNAjGD-1usL2cRm";
+    });
+    
+document.getElementById('si-1').addEventListener('click', ()=>{
+      window.location.href = "https://www.facebook.com/nitin.gaurav.5623?mibextid=ZbWKwL";
+    });
+document.getElementById('si-2').addEventListener('click', ()=>{
+      window.location.href = "https://www.instagram.com/fenixs_alpha?igsh=OWJwczlkYXAxb3lh";
+    });
+    document.getElementById('si-3').addEventListener('click', () => {
+      window.location.href = "https://wa.me/919084125888";
+      
+    });
+    document.getElementById('si-4').addEventListener('click', () => {
+      window.location.href = "mailto: anshsingh803180@gmail.com";
+    });
+    
+    </script>
+</body>
+</html>
