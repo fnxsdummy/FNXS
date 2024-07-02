@@ -19,9 +19,7 @@ function goHome() {
 function slayer() {
     window.location.href = "https://www.instagram.com/fenixs_slayer?igsh=Z2EyZTh2ajk1cXJq";
 };
-function alpha() {
-    window.location.href = "fnxsalpha.html";
-};
+
 function hunter() {
     window.location.href = "https://www.instagram.com/_fenixs_hunter?igsh=NW9nZmdjdHZrY3dn";
 };
