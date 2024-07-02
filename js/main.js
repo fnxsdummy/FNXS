@@ -23,3 +23,6 @@ function slayer() {
 function hunter() {
     window.location.href = "https://www.instagram.com/_fenixs_hunter?igsh=NW9nZmdjdHZrY3dn";
 };
+function alpha() {
+    window.location.href = "fnxsalpha.html";
+};
